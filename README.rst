@@ -1,7 +1,9 @@
 
 .. image:: https://cdn-images-1.medium.com/max/735/1*Gcrb4kMfApjfjGesk0qn4w.png
+    :width: 200px
     :align: center
-    :figclass: align-center
+    :height: 100px
+    :alt: alternate text
 
 ======
 
