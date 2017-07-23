@@ -1,5 +1,5 @@
 
-.. image:: https://cdn-images-1.medium.com/max/735/1*Gcrb4kMfApjfjGesk0qn4w.png_
+.. image:: https://cdn-images-1.medium.com/max/735/1*Gcrb4kMfApjfjGesk0qn4w.png
 
 =====
 
@@ -7,7 +7,7 @@
                                                                                                   
 =====
 
-:emphasis:`"If you want to learn how to work on a project then you are at right place.We will provide you an environment to learn that how to learn."` ― `khanchi97 <https://github.com/khanchi97>`
+:emphasis:`"If you want to learn how to work on a project then you are at right place.We will provide you an environment to learn that how to learn."` ― `khanchi97 <https://github.com/khanchi97>`_
 
 =====
 
