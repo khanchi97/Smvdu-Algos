@@ -7,7 +7,7 @@
 
 =====
 
-If you are a newcomer to github then please go through `wiki <https://en.wikipedia.org/wiki/GitHub>`_ page of github and then take a look at `this <https://try.github.io/levels/1/challenges/1>`_ tutorial for github newcomer. 
+If you are a newcomer to github then first take a look at `wiki <https://en.wikipedia.org/wiki/GitHub>`_ page of github and then go through `this <https://try.github.io/levels/1/challenges/1>`_ tutorial to learn some git commands. 
 
 Now you have a great opportunity in helping us to improve `Smvdu-Algos <https://github.com/khanchi97/Smvdu-Algos>`_.And learning new things along with practising algorithms.And you can create an issue or review a PR or create a PR.This is our `gitter <https://gitter.im/Smvdu-Algos/Lobby>`_ channel to get help and to help others.
 
