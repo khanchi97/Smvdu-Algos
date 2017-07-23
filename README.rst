@@ -1,9 +1,5 @@
 
-.. image:: https://cdn-images-1.medium.com/max/735/1*Gcrb4kMfApjfjGesk0qn4w.png
-
-=====
-
-#Smvdu-Algos
+.. image:: http://the9gag.com/images/pictuers/programmer_will_write_code_for.jpg
                                                                                                   
 =====
 
