@@ -1,6 +1,7 @@
 
 .. image:: https://cdn-images-1.medium.com/max/735/1*Gcrb4kMfApjfjGesk0qn4w.png
     :align: center
+    :figclass: align-center
 
 ======
 
