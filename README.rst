@@ -4,7 +4,8 @@
                                                                                                   
 =====
 
-:emphasis:`"If you want to learn how to work on a project then you are at right place.We will provide you an environment to learn that how to learn."` ― `khanchi97 <https://github.com/khanchi97>`_
+:emphasis:`"We will provide you an environment to learn that how to learn."` ―
+           `khanchi97 <https://github.com/khanchi97>`_
 
 =====
 
