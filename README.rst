@@ -18,7 +18,7 @@ Now you have a great opportunity in helping us to improve `Smvdu-Algos <https://
 
 Now the only thing that you have to do is fork Smvdu-Algos repository make some changes and use **git add/commit/push**.
 
-.. |gitter channel| image:: https://img.shields.io/badge/gitter-join%20chat-lightgrey.svg
+.. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
 
 
