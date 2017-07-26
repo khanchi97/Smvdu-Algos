@@ -6,8 +6,6 @@
 
 :emphasis:`"We will provide you an environment to learn that how to learn."` ― `khanchi97 <https://github.com/khanchi97>`_
 
-=====
-
 |gitter channel|
 
 =====
