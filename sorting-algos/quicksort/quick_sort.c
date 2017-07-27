@@ -36,5 +36,4 @@ quicksort(a,0,n-1);
 //print the sorted array
 for(k=0;k<n;k++){
 printf("%d ",a[k]);}
-
 }
