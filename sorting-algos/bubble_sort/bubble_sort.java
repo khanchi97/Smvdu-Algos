@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class sort()
+public class sort
 {
 public static void main(String args[])
 {
@@ -17,7 +17,7 @@ for (int i = 0; i < n-1; i++)
    {
       if (arr[j] > arr[j+1])
                 {
-                    // swap temp and arr[i]
+                    // swap temp and arr[j]
                     int temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
