@@ -6,7 +6,9 @@
 =====
 
 :emphasis:`"We will provide you an environment to learn that "how to learn"."` ― `khanchi97 <https://github.com/khanchi97>`_
+
 Please join gitter channel to get help and to help others.
+
 |gitter channel|
 
 =====
