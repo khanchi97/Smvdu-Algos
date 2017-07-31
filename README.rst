@@ -1,6 +1,6 @@
 
 .. image:: https://www.singsys.com/blog/wp-content/uploads/2013/12/ss.jpg
-   :align: center
+   :align: middle
    :target: http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/
                                                                                                   
 =====
@@ -30,7 +30,7 @@ Now the only thing that you have to do is fork Smvdu-Algos repository,make some 
 
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
- :align: center
+ :align: middle
 
 
 
