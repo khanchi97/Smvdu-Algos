@@ -9,7 +9,9 @@
 
 Please join gitter channel to get help and to help others.
 
-|gitter channel|
+=====
+
+                                                      |gitter channel|
 
 =====
 
@@ -17,8 +19,11 @@ If you are a newcomer to github then first take a look at `wiki <https://en.wiki
 
 Now you have a great opportunity in helping us to improve `Smvdu-Algos <https://github.com/khanchi97/Smvdu-Algos>`_.And learning new things along with practising algorithms.
 And you can 
+
 * Create an issue
+
 * Review a PR
+
 * Create a PR.
 
 Now the only thing that you have to do is fork Smvdu-Algos repository,make some changes and use **git add/commit/push** to let us know what you have chaged and want to be merged in **Smvdu-Algos**.
