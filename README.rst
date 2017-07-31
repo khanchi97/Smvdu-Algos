@@ -11,7 +11,7 @@ Please join gitter channel to get help and to help others.
 
 =====
 
-                                                      |gitter channel|
+|gitter channel|
 
 =====
 
@@ -30,6 +30,7 @@ Now the only thing that you have to do is fork Smvdu-Algos repository,make some 
 
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
+ :align: center
 
 
 
