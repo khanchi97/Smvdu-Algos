@@ -2,6 +2,7 @@
 
 int main ()
 {
-    //bag bhosdike	
+    //you are not supposed to add unusual stuff in any repo.	
+    //just complete the code for counting sort.
 
 }
