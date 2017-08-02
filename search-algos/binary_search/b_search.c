@@ -4,10 +4,11 @@
 int main ()
 {
     
-   int a[100],i,n,x,f,l,m,flag=0;
+   int i,n,x,f,l,m,flag=0;
    printf("enter how many value in array\n");   
    scanf("%d",&n);                                      \\ Length of an array
    printf("Enter %d value in ascending order\n",n);  
+    int a[n];
    for(i=0;i<n;i++)                \\ Taking input values of an array
 scanf("%d",&a[i]);
    printf("Which value to be search ->");
