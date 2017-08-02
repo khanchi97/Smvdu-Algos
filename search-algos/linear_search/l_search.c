@@ -2,9 +2,10 @@
 #include<stdio.h>
 void main()
 {
-   int a[100],i,n,x,flag=0;
+   int i,n,x,flag=0;
    printf("enter how many value in array\n");  \\Taking no of elements in an array from user
    scanf("%d",&n);
+   int a[n];
    printf("Enter %d value \n",n);
    for(i=0;i<n;i++)
 scanf("%d",&a[i]);     \\Taking input  array elements from user
