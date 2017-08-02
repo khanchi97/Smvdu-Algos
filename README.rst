@@ -27,6 +27,7 @@ And you can
 * Create a PR.
 
 Now the only thing that you have to do is fork Smvdu-Algos repository,make some changes and use **git add/commit/push** to let us know what you have chaged and want to be merged in **Smvdu-Algos**.
+And one more thing that you can do is invite your friends so that they will be able to explore new things. 
 
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
