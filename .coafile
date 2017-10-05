@@ -1,0 +1,7 @@
+[cli]
+files = **/*.c,**/*.py,**.cpp
+max_line_length = 80
+use_spaces = True
+apply_patch = True
+bears = SpaceConsistencyBear
+default_actions = *: ApplyPatchAction

@@ -6,7 +6,7 @@ int main()
     scanf("%d",&size);
     int arr[size];
     s_sort(size,arr);
-
+    
     //print array
     return 0;
 }
