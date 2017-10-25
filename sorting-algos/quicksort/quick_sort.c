@@ -1,29 +1,35 @@
 #include<stdio.h>
 
 //it is the recursive function of quicksort
-void quicksort(int a[],int start,int end){
+void quicksort(int a[],int start,int end)
+{
 	int temp,d,i,j,k;// d is another temporary variable
-	if(start<end){
+	if(start<end)
+  {
 		temp=a[start];
 		i=start;
 		j=end;
-		while(i<j){
-			if(a[i+1]<=temp){
+		while(i<j)
+    {
+			if(a[i+1]<=temp)
+      {
 				d=a[i+1];
 				a[i+1]=a[i];
 				a[i]=d;
-				i++;}
-			else{
+				i++;
+      }
+			else
+      {
 				d=a[i+1];
 				a[i+1]=a[j];
 				a[j]=d;
-				j--;}
-		}
-		quicksort(a,start,i-1);
-		quicksort(a,i+1,end);}
+				j--;
+      }
+	  }
+    quicksort(a,start,i-1);
+    quicksort(a,i+1,end);
+  }
 }
-
-
 int main ()
 {
 	int n;
@@ -39,3 +45,4 @@ int main ()
 		printf("%d ",a[k]);
 		}
 }
+
