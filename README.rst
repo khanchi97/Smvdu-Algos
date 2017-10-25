@@ -31,7 +31,7 @@ Now the only thing that you have to do is fork Smvdu-Algos repository,make some 
 And one more thing that you can do is invite your friends so that they will be able to explore new things. 
 
 **Note**:Please make sure that you are making a PR with referencing a issue as well.If you feel that issue for you desired task is not 
-present then feel free to ping us in gitter channel.
+present then feel free to ping us in gitter channel.And if you want to give some suggestion related to this project,we can discuss in our channel.
 
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
