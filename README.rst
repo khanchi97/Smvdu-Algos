@@ -30,6 +30,9 @@ And you can
 Now the only thing that you have to do is fork Smvdu-Algos repository,make some changes and use **git add/commit/push** to let us know what you have chaged and want to be merged in **Smvdu-Algos**.
 And one more thing that you can do is invite your friends so that they will be able to explore new things. 
 
+**Note**:Please make sure that you are making a PR with referencing a issue as well.If you feel that issue for you desired task is not 
+present then feel free to ping us in gitter channel.
+
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
  :align: middle
