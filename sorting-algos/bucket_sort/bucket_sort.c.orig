@@ -26,7 +26,7 @@ if ( (sorted[k]/p)%10  == 0 ){
 if (flag == N){
    printf("\nSorted List: \n");
    for(j=0 ;  j < N ; j++){
-   printf("%d\t", sorted[j]);  # Ignore QuotesBear
+   printf("%d\t", sorted[j]);
    }
    printf("\n");
    getch();
@@ -45,6 +45,6 @@ if( bucket[j][k] > 0 ){
 
 }
 
-return 0 ;
+return 0 ;  
   //complete this
 }

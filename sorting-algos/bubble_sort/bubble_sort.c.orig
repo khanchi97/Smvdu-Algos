@@ -3,7 +3,7 @@
 int main ()
 {
     //complete this
-
+    
     int n; //size of array
     scanf("%d",&n);
    int arr[n];

@@ -1,0 +1,6 @@
+language: python 
+install: true
+sudo: false
+dist: trusty 
+
+
