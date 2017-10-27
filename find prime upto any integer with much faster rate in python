@@ -1,0 +1,14 @@
+primes = set()
+def get_primes(n):
+    numbers = set(range(n, 1, -1))
+    #print numbers.pop()
+    while numbers:
+        p = numbers.pop()
+        #print p
+        primes.add(p)
+        p=2
+        numbers.difference_update(set(range(p*2, n+1, p)))
+        #print numbers
+    print primes
+
+get_primes(100000)

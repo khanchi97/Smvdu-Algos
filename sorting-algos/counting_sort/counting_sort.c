@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 
+
 int main() {
 int n;
     scanf("%d",&n);
@@ -20,7 +21,7 @@ int n;
             if(i==c[j])printf("%d ",c[j]);
         }
     }
-    //mohit
+   
     return 0;
 }
 
