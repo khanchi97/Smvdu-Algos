@@ -1,27 +1,34 @@
-#include<iostream>
-
-using namespace std;
-
-int main()
+#include<iostream.h>
+#include<conio.h>
+void main()
 {
-    int n,x;
-    cout <<"enter size of array" <<endl;
-    cin >>n;
-    int arr[n];
-    cout << "enter the values" <<endl;
-    for(int i = 0; i < n; i++)
-        cin >> arr[i];
-    cout <<"enter the value you want to find" << endl;
-    cin >> x;
-    for(int i = 0; i < n; i++)
-    {
-      if(arr[i] == x)
-      {
-        cout << "Yes the element is at index\n" << i << endl;
-        break;
-      }
-      if(i == n-1)
-        cout << "No the value you want to find is not present in array" << endl;
-    }
-    return 0;
+	clrscr();
+	int arr[10], i, num, n, c=0, pos;
+	cout<<"Enter the array size : ";
+	cin>>n;
+	cout<<"Enter Array Elements : ";
+	for(i=0; i<n; i++)
+	{
+		cin>>arr[i];
+	}
+	cout<<"Enter the number to be search : ";
+	cin>>num;
+	for(i=0; i<n; i++)
+	{
+		if(arr[i]==num)
+		{
+			c=1;
+			pos=i+1;
+			break;
+		}
+	}
+	if(c==0)
+	{
+		cout<<"Number not found..!!";
+	}
+	else
+	{
+		cout<<num<<" found at position "<<pos;
+	}
+	getch();
 }
