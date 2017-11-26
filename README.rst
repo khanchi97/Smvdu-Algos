@@ -40,6 +40,8 @@ And one more thing that you can do is invite your friends so that they can get b
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
  :align: middle
+ commit by akshit 
+ 
 
 
 
