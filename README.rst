@@ -36,6 +36,7 @@ And one more thing that you can do is invite your friends so that they can get b
   then feel free to ping us in gitter channel.And if you want to give some suggestion related to this project,we can discuss in our channel.
 * Make your PR in `development` branch rather than `master` becuase all the development work goes in this branch and when a good bunch of code is
   ready then it is pushed in `master` branch.
+* Thanks for yor help! -utkarshg6
 
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
