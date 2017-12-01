@@ -15,7 +15,7 @@ Example of a good commit:
     It helps not writing more functions inside
     ``coalib`` for this.
 
-    Closes https://github.com/coala/coala/issues/5861
+    Closes https://github.com/khanchi97/Smvdu-Algos/issues/5861
 
 - `setup.py: Change bears' entrypoint`: Describe the change in
    maximum of 50 characters.
@@ -23,7 +23,7 @@ Example of a good commit:
 - `This entrypoint.. ..for this`: Describe the reasoning of your changes
    in maximum of 72 characters per line.
 
-- `Closes https://github.com/coala/coala/issues/5861`: Mention the URL
+- `Closes https://github.com/khanchi97/Smvdu-Algos/issues/5861`: Mention the URL
    of the issue it closes or fixes.
 
 At coala we are looking heavily at the maintainability of the code.
@@ -60,7 +60,7 @@ Example:
     This entrypoint ensures that coala discovers the bears correctly.
     It helps not writing more functions inside ``coalib`` for this.
 
-    Closes https://github.com/coala/coala/issues/5861
+    Closes https://github.com/khanchi97/Smvdu-Algos/issues/5861
 
 Shortlog
 ~~~~~~~~
@@ -122,7 +122,7 @@ Example:
 
 ::
 
-    Fixes https://github.com/coala/coala/issues/5861
+    Fixes https://github.com/khanchi97/Smvdu-Algos/issues/5861
 
 -  Should use the ``Fixes`` keyword if your commit fixes a bug, or ``Closes``
    if it adds a feature/enhancement.
@@ -153,14 +153,14 @@ Example 1 (fixed bug):
 
 ::
 
-    setup: Install .coafile via package_data
+    setup: Install .configfile via package_data
 
-    When installing the .coafile to distutils.sysconfig.get_python_lib, we
+    When installing the .configfile to distutils.sysconfig.get_python_lib, we
     ignore that this is not the installation directory in every case. Thus
     it is easier, more reliable and platform independent to let distutils
     install it by itself.
 
-    Fixes https://github.com/coala/coala/issues/269
+    Fixes https://github.com/khanchi97/Smvdu-Algos/issues/58
 
 Example 2 (implemented feature):
 
@@ -170,7 +170,7 @@ Example 2 (implemented feature):
 
     This massively helps debugging linters.
 
-    Closes https://github.com/coala/coala/issues/2060
+    Closes https://github.com/khanchi97/Smvdu-Algos/issues/25
 
 Editing Commit Messages
 -----------------------
