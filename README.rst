@@ -10,6 +10,8 @@
 
 Please join gitter channel to get help and to help others.
 
+And please follow https://wiki.gnome.org/Git/CommitMessages to know how to write good Commit Messages.
+
 =====
 
 |gitter channel|
