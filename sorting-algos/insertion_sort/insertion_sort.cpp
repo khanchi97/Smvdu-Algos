@@ -1,31 +1,32 @@
 /*
 	Insertion sort
 */
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 void insertion_sort(int* arr, int n);
 
 int main()
 {
 	int n, i;
-	printf("Enter the number of elements\n");
-	scanf("%d", &n);
+	cout << "Enter the number of elements\n";
+	cin >> n;
 	
 	int arr[n]; // Declaring an array of size 'n'
-	printf("Enter the elements\n");
+	cout << "Enter the elements\n";
 	
 	for(i = 0; i < n; i++)
 	{
-		scanf("%d", &arr[i]); // Reading the elements into the array
+		cin >> arr[i]; // Reading the elements into the array
 	}
 	
 	insertion_sort(arr, n); // function call
 	
-	printf("After insertion sort\n");
+	cout << "After insertion sort\n";
 	
 	for(i = 0; i < n; i++)
 	{
-		printf("%d\t", arr[i]); // Sorted array is printed
+		cout << arr[i] << "\t"; // Sorted array is printed
 	}
 	return 0;
 }
