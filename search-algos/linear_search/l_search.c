@@ -8,6 +8,7 @@ void main()
    scanf("%d",&n);                                   //Taking length of an array from user
    int a[n];                                          //Intializing an array of length n
    printf("Enter %d value \n",n);
+
    
    for(int i=0;i<n;i++){
 scanf("%d",&a[i]);                                     //Taking n array elements from the user
@@ -18,6 +19,15 @@ scanf("%d",&a[i]);                                     //Taking n array elements
    
                                                          
    for(i=0;i<n;i++){                                      //Linear search logic
+
+   for(i=0;i<n;i++)
+scanf("%d",&a[i]);     \\Taking input  array elements from user
+   scanf("%d",&n);
+   printf("Which value to be search :");
+   scanf("%d",&x);      \\Element to be find
+   scanf("%d",&n);
+           \\Linear search logic
+
       if(x==a[i])
       {
  flag=1;

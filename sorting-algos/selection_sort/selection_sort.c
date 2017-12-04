@@ -1,17 +1,35 @@
 #include<stdio.h>
 
-int main()
-{
-    int size;
-    scanf("%d",&size);
-    int arr[size];
-    s_sort(size,arr);
-    
-    //print array
-    return 0;
-}
+ void sel_sort(int arr[],int n){
+    int i,j,temp;
+    for(i=0;i<n-1;i++){
+        int indexmin=i;
+        for(j=i+1;j<n;j++){
+            if(arr[j]<arr[indexmin])
+                indexmin=j;
+        }
+        if(indexmin!=i){//swapping elements
+            temp=arr[indexmin];
+            arr[indexmin]=arr[i];
+            arr[i]=temp;
+        }
+    }
 
-void s_sort(int size ,int *array)
-{
-    //complete this function
-}
+ }
+
+ int main(){
+    printf("enter array size:\n");
+    int n,i;
+    scanf("%d",&n);
+    int a[n];
+    printf("enter x elements:\n");
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    
+     //calling selection sort
+    sel_sort(a,n);
+    printf("output array\n");
+     //printing array
+    for(i=0;i<n;i++)
+        printf("%d ",a[i]);
+ }
