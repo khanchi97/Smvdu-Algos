@@ -59,7 +59,7 @@ int main()
     cout<<"Enter the edges "<<endl;
     while(e--){
         cin>>a>>b;
-        g.addEdge(a,b,false);
+        g.addEdge(a,b,undirected);
     }
     cout<<"Enter the source node"<<endl;
     cin>>a;
