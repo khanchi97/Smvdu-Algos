@@ -21,12 +21,12 @@ scanf("%d",&a[i]);                                     //Taking n array elements
    for(i=0;i<n;i++){                                      //Linear search logic
 
    for(i=0;i<n;i++)
-scanf("%d",&a[i]);     \\Taking input  array elements from user
+scanf("%d",&a[i]);                                        //Taking input  array elements from user
    scanf("%d",&n);
    printf("Which value to be search :");
-   scanf("%d",&x);      \\Element to be find
+   scanf("%d",&x);                                             //Element to be find
    scanf("%d",&n);
-           \\Linear search logic
+                                                            //Linear search logic
 
       if(x==a[i])
       {
