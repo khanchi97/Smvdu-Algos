@@ -1,30 +1,34 @@
 
 #include<stdio.h>
-void main()
-{
-   int i,n,x,flag=0;
-   printf("enter how many value in array\n");  \\Taking no of elements in an array from user
-   scanf("%d",&n);
-   int a[n];
+void main(){
+   int flag,n,x,pos;
+   flag=0;
+   printf("Enter the length of an Array\n");  
+   scanf("%d",&n);                                   //Taking length of an array from user
+   int a[n];                                          //Intializing an array of length n
    printf("Enter %d value \n",n);
-   for(i=0;i<n;i++)
-scanf("%d",&a[i]);     \\Taking input  array elements from user
-   scanf("%d",&n);
-   printf("Which value to be search :");
-   scanf("%d",&x);      \\Element to be find
-   scanf("%d",&n);
-           \\Linear search logic
-   for(i=0;i<n;i++){
-      if(x==a[i])
-      {
- flag=1;
- break;
+
+   for(int i=0;i<n;i++){
+    scanf("%d",&a[i]);                                     //Taking n array elements from the user
+   }                                                    
+   
+   printf("Enter the value to be find :");  
+   scanf("%d",&x);                                      //Element to be find
+   
+                                                         
+      for(int i=0;i<n;i++){                                 //Linear search logic                                                      
+
+      if(x==a[i]){
+         flag=1;
+         pos=i;
+          break;
       }
+         
    }
    if(flag==0)
-      printf("%d value not found\n",x);   \\Not found ,,Print -1
+      printf("%d value not found\n",x);                     //Not found ..Print Element not exist in given array
    else
-      printf("%d value found at location %d\n",x,i);  \\ found..Print value
-   getch();
+      printf("%d value found at location %d\n",x,pos);          //found..Print Found and the position af the value in array
+ 
 }
 
