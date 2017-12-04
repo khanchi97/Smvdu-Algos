@@ -75,7 +75,7 @@ void Graph :: dfs(int src, bool* visited)
 int main()
 {
 	int n, src, dstn, chc;
-	cout << "Enter the number of edges in the graph\n";
+	cout << "Enter the number of nodes in the graph\n";
 	cin >> n;
 	cout << "NOTE:\nThe nodes are from 0 to n-1\n\n";
 	Graph G(n);
