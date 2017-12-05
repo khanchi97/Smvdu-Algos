@@ -2,6 +2,9 @@
 
 #include <stdio.h>
 
+
+int count=0;//global variable count stores the number of times element found
+
 //using selection sort for producing sorted array for binary search
 
 void selsort(int A[],int oindexA[],int size)
@@ -33,19 +36,25 @@ void selsort(int A[],int oindexA[],int size)
 
 
 
-int binarysearch(int A[],int low,int high,int key)
+void binarysearch(int A[],int low,int high,int key,int index[])
 {
     if(high<low)
-        return -1;
+        return;
 
     int mid=(low+high)/2;
 
     if(key==A[mid])
-        return mid;
+        {
+            index[count++]=mid; //index of found elements is stored in array index
+
+            binarysearch(A,low,mid-1,key,index);    //still searches left half as same elements may be repeated
+            binarysearch(A,mid+1,high,key,index);   //same for right half
+        }
+
     else if(key<A[mid])
-        return binarysearch(A,low,mid-1,key);//searching in left half if key smaller
+        binarysearch(A,low,mid-1,key,index);//searching in left half if key smaller
     else
-        return binarysearch(A,mid+1,high,key);//else searches right half
+        binarysearch(A,mid+1,high,key,index);//else searches right half
 }
 
 void main()
@@ -59,6 +68,8 @@ void main()
     int i;
 
     int A[size],oindexA[size],key;//array oindex stores the index in unsorted array corresponding to index in sorted array
+
+    int index[size];//stores the indices of searched element
 
     for(i=0;i<size;i++)
         oindexA[i]=i;    //initialising the original index array
@@ -75,14 +86,18 @@ void main()
 
     selsort(A,oindexA,size);  //sortiing by selection sort for binary search and storing original indices in array oindexA
 
-    int index=binarysearch(A,0,size-1,key);//calling binarysearch function
+    binarysearch(A,0,size-1,key,index);//calling binarysearch function
 
-    int originalindex=oindexA[index]; //converts index from sorted array to index in unsorted array
-
-    if(index==-1)
+    if(count==0)
         printf("Element %d not found in the array\n",key);
     else
-        printf("Element %d found in the sorted array at index %d",key,originalindex); //displays index with respect to unsorted array
+    {
+        printf("Element %d found in the array at the following indices\n",key);
+        for(i=0;i<count;i++)
+            printf("%d,",oindexA[index[i]]);//oindexA array converts index from sorted array to that in unsorted array
+
+            printf("\n");
+    }
 
     //gurjot273
 }
