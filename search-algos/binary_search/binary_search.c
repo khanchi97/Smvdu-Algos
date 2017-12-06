@@ -1,10 +1,5 @@
-
-
 #include <stdio.h>
-
-
 int count=0;//global variable count stores the number of times element found
-
 //using selection sort for producing sorted array for binary search
 
 void selsort(int A[],int oindexA[],int size)
@@ -29,12 +24,8 @@ void selsort(int A[],int oindexA[],int size)
 			temp=oindexA[i];
 			oindexA[i]=oindexA[flag]; //original index of A[i] after swapping in unsorted array
 			oindexA[flag]=temp; //original index of A[flag] after swapping in unsorted array
-
-
 		}
 }
-
-
 
 void binarysearch(int A[],int low,int high,int key,int index[])
 {
@@ -74,7 +65,6 @@ void main()
     for(i=0;i<size;i++)
         oindexA[i]=i;    //initialising the original index array
 
-
     printf("Enter the elements of array\n");
 
     for(i=0;i<size;i++)
@@ -94,12 +84,11 @@ void main()
     {
         printf("Element %d found in the array at the following indices\n",key);
         for(i=0;i<count;i++)
-            printf("%d,",oindexA[index[i]]);//oindexA array converts index from sorted array to that in unsorted array
+            printf("%d",oindexA[index[i]]);//oindexA array converts index from sorted array to that in unsorted array
 
             printf("\n");
     }
 
-    //gurjot273
 }
 
 
