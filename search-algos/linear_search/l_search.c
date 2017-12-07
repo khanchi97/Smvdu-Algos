@@ -1,34 +1,47 @@
 
 #include<stdio.h>
-void main(){
-   int flag,n,x,pos;
-   flag=0;
-   printf("Enter the length of an Array\n");  
-   scanf("%d",&n);                                   //Taking length of an array from user
-   int a[n];                                          //Intializing an array of length n
-   printf("Enter %d value \n",n);
+#include<stdlib.h>
 
-   for(int i=0;i<n;i++){
-    scanf("%d",&a[i]);                                     //Taking n array elements from the user
-   }                                                    
-   
-   printf("Enter the value to be find :");  
-   scanf("%d",&x);                                      //Element to be find
-   
-                                                         
-      for(int i=0;i<n;i++){                                 //Linear search logic                                                      
 
-      if(x==a[i]){
-         flag=1;
-         pos=i;
-          break;
-      }
-         
-   }
-   if(flag==0)
-      printf("%d value not found\n",x);                     //Not found ..Print Element not exist in given array
-   else
-      printf("%d value found at location %d\n",x,pos);          //found..Print Found and the position af the value in array
- 
+//This function will return position if the element is found
+//or -1 if it is not found
+//O(n)
+int l_search(int *array,int length,int data ){
+    int i;
+    for(i = 0 ; i < length ; i++){
+        if(array[i] == data)
+            //value found
+            return i;
+    }
+    //value not found
+    return -1;
+}
+
+int main(){
+
+    int numOfElements,*array,value,pos;
+    printf("Enter the length of an Array : ");  
+    scanf("%d",&numOfElements);
+
+    //dynamic memory allocation                                   
+    array = (int *)malloc(sizeof(int)*numOfElements); 
+
+    printf("Enter the %d Values : ",numOfElements);
+    
+    //reading the numbers
+    for(int i = 0 ; i < numOfElements ; i++){
+        scanf("%d",&array[i]);                                    
+    } 
+
+    printf("Enter the value to be searched : ");
+    scanf("%d",&value);                                                  
+
+    pos = l_search(array , numOfElements , value); 
+
+    if(pos == -1)
+        printf("%d not found\n", value);                     
+    else
+        printf("%d found at location %d\n",value,pos+1);          
+    return 0; 
 }
 
