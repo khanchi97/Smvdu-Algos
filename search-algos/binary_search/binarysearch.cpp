@@ -1,9 +1,10 @@
-include<iostream.h>
+#include<iostream>
+using namespace std;
 int Bsearch(int[],int,int);         //Bsearch(array,size,item to be searched)
 int main()
 {
 int A[50],item,n,index;
-cout<<"Enter desired array size(max. 50)";
+cout<<"Enter desired array size";
 cin>>n;
 cout<<"\nEnter array elements in ascending order";
 for(int i=0;i<n;i++)
