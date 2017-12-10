@@ -1,31 +1,32 @@
 #include <stdio.h>
 
-void counting_sort(int arr[],int size,int exp)
+void counting_sort(int arr[],int size,int exp)  //radix sort is only applicable for non-negative integers
 {
-    int aux[size];
-    int freq[10];
+    int aux[size];      //contains sorted array
+    int freq[10];       //frequency of digits 0 to 9
     int i;
     for(i=0;i<10;i++)
         freq[i]=0;
     int temp;
     for(i=0;i<size;i++)
     {
-        temp=(arr[i]/exp)%10;
+        temp=(arr[i]/exp)%10;   //exp is power of 10 according to digit used for sorting
         freq[temp]++;
     }
 
     for(i=1;i<10;i++)
-        freq[i]+=freq[i-1];
+        freq[i]+=freq[i-1];     //finding cumulative frequency for determining place to insert
 
     for(i=size-1;i>=0;i--)
     {
         temp=(arr[i]/exp)%10;
-        aux[freq[temp]-1]=arr[i];
+        aux[freq[temp]-1]=arr[i];   //inserting the element and decreasing frequency
         freq[temp]--;
     }
 
     for(i=0;i<size;i++)
-        arr[i]=aux[i];
+        arr[i]=aux[i];              //copying sorted array into original array
+
 }
 
 void radix_sort(int arr[],int size)
