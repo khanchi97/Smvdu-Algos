@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-void counting_sort(int arr[],int size,int exp)  //radix sort is only applicable for non-negative integers
+void counting_sort(int arr[],int n,int exp)  //radix sort is only applicable for non-negative integers
 {
-    int aux[size];      //contains sorted array
+    int aux[n];      //contains sorted array
     int freq[10];       //frequency of digits 0 to 9
     int i;
     for(i=0;i<10;i++)
         freq[i]=0;
     int temp;
-    for(i=0;i<size;i++)
+    for(i=0;i<n;i++)
     {
         temp=(arr[i]/exp)%10;   //exp is power of 10 according to digit used for sorting
         freq[temp]++;
@@ -17,30 +18,30 @@ void counting_sort(int arr[],int size,int exp)  //radix sort is only applicable 
     for(i=1;i<10;i++)
         freq[i]+=freq[i-1];     //finding cumulative frequency for determining place to insert
 
-    for(i=size-1;i>=0;i--)
+    for(i=n-1;i>=0;i--)
     {
         temp=(arr[i]/exp)%10;
         aux[freq[temp]-1]=arr[i];   //inserting the element and decreasing frequency
         freq[temp]--;
     }
 
-    for(i=0;i<size;i++)
+    for(i=0;i<n;i++)
         arr[i]=aux[i];              //copying sorted array into original array
 
 }
 
-void radix_sort(int arr[],int size)
+void radix_sort(int arr[],int n)
 {
     int i;
     int exp=1;
-    int max=arr[0];
-    for(i=1;i<size;i++)
+    int maxm=arr[0];
+    for(i=1;i<n;i++)
     {
-        if(max<arr[i])
-            max=arr[i];
+        if(maxm<arr[i])
+            maxm=arr[i];
     }
     int digit =0;
-    int temp=max;
+    int temp=maxm;
     while(temp!=0)
     {
         digit++;
@@ -48,22 +49,22 @@ void radix_sort(int arr[],int size)
     }
     for(i=0;i<digit;i++)
     {
-        counting_sort(arr,size,exp);
+        counting_sort(arr,n,exp);
         exp*=10;
     }
 }
 int main ()
 {
-    int size,i;
-    printf("Enter the number of elements in array\n");
-    scanf("%d",&size);
-    int arr[size];
-    printf("Enter the elements of array\n");
-    for(i=0;i<size;i++)
-        scanf("%d",&arr[i]);
-    radix_sort(arr,size);
-    printf("The sorted array is \n");
-    for(i=0;i<size;i++)
-        printf("%d ",arr[i]);
-    printf("\n");
+    int n,i;
+    cout<<"Enter the number of elements in array"<<endl;
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elements of array"<<endl;
+    for(i=0;i<n;i++)
+        cin>>arr[i];
+    radix_sort(arr,n);
+    cout<<"The sorted array is"<<endl;
+    for(i=0;i<n;i++)
+        cout<<arr[i]<<" ";
+    cout<<endl;
 }
