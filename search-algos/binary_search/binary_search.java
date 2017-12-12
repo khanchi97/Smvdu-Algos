@@ -40,7 +40,7 @@ class BinarySearch
         first = middle + 1;    
       else if ( array[middle] == search ) 
       {
-        System.out.println(search + " found at index " + (middle + 1) + ".");
+        System.out.println(search + " found at position " + (middle + 1) + ".");
         break;
       }
       else
@@ -68,4 +68,4 @@ class BinarySearch
   8
   
   FINAL OUTPUT:
-  8 found at index 4.
+  8 found at position 5.
