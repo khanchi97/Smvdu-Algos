@@ -11,3 +11,13 @@ This is a standard Greedy Algorithm problem. Following is algorithm.
 .......a) If the current job can fit in the current result sequence
           without missing the deadline, add current job to the result.
 	        Else ignore the current job.
+
+Example:
+4
+a 4 20
+b 1 10
+c 1 40
+d 1 30
+
+Output:
+c a

@@ -41,12 +41,14 @@ void union1(int x,int y)
 }
 int main()
 {
+	printf("Enter no of vertices and no of edges\n");
 	int n,m,i;cin>>n>>m;
 	for(i=1;i<=n;i++)
 	{
 		arr[i]=i;
 		size[i]=1;
 	}
+	printf("Enter\nsrc dest weight\n");
 	priority_queue<piii,vector<piii>,mycmp>pq;
 	for(i=1;i<=m;i++)
 	{
@@ -65,5 +67,6 @@ int main()
 			union1(fir,sec);
 		}
 	}
+	printf("weight of MST\n");
 	cout<<sum<<endl;
 }

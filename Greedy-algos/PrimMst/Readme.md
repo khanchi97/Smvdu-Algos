@@ -12,3 +12,23 @@ Algorithm
 
 
 The idea of using key values is to pick the minimum weight edge from cut. The key values are used only for vertices which are not yet included in MST, the key value for these vertices indicate the minimum weight edges connecting them to the set of vertices included in MST.
+
+Example:
+6 9
+0 3 1
+4 5 2
+2 4 5
+3 4 6
+0 1 3
+1 2 1
+2 3 1
+1 3 3
+2 5 4
+
+
+Output :
+0--3=1
+1--2=1
+2--3=1
+4--5=2
+2--5=4
