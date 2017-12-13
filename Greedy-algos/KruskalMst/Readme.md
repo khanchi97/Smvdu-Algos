@@ -10,3 +10,12 @@ Below are the steps for finding MST using Kruskal’s algorithm
 The step#2 uses Union-Find algorithm to detect cycle.
 
 The algorithm is a Greedy Algorithm. The Greedy Choice is to pick the smallest weight edge that does not cause a cycle in the MST constructed so far.
+
+Example:
+4 5
+0 1 10
+0 2 6
+0 3 5
+1 3 15
+2 3 4
+Output: 19

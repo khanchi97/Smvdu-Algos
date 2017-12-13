@@ -24,7 +24,6 @@ def huffmanCoding(arr, freq):
 
     return rootheap
 
-
 def printHeap(heap, str):
     if heap.left != None:
         printHeap(heap.left, str + '0')
@@ -33,6 +32,7 @@ def printHeap(heap, str):
         printHeap(heap.right, str + '1' )
 
     if heap.left == None:
+        print("character code-word")
         print(heap.char, str)
         dic[heap.char] = str
 
@@ -88,8 +88,22 @@ def getchar(rootheap, index, strvalencoded):
     if number ==1:
         return getchar(rootheap.right, index+1, strvalencoded)
 
-arr = ['a', 'b', 'c', 'd', 'e', 'f']
-freq = [5, 9, 12, 13, 16, 45]
+
+print("Example input:")
+print("6\na\n5\nb\n9\nc\n12\nd\n13\ne\n16\nf\n45\n")
+text = raw_input("Enter no of characters ")
+text = int(text)
+arr = []
+freq = []
+for i in range(text):
+    arr.append((raw_input("Character ")))
+    freq.append(int(raw_input("Frequency ")))
+
+#    arr[i] = raw_input("character")
+#    freq[i] = raw_input("frequency")
+
+#arr = ['a', 'b', 'c', 'd', 'e', 'f']
+#freq = [5, 9, 12, 13, 16, 45]
 rootheap = huffmanCoding(arr, freq)
 
 printHeap(rootheap, '')

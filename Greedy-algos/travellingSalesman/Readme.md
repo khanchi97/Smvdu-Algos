@@ -25,3 +25,14 @@ Else if size of S is greater than 2.
 
 For a set of size n, we consider n-2 subsets each of size n-1 such that all subsets don’t have nth in them.
 Using the above recurrence relation, we can write dynamic programming based solution. There are at most O(n*2n) subproblems, and each one takes linear time to solve. The total running time is therefore O(n2*2n). The time complexity is much less than O(n!), but still exponential. Space required is also exponential. So this approach is also infeasible even for slightly higher number of vertices.
+
+
+Example:
+3
+1 0 1
+0 1 0
+1 0 1
+
+Output:
+Tour Cost: 1
+Tour Path: 0 1 2 0

@@ -21,3 +21,21 @@ a) Input is array of unique characters along with their frequency of occurrences
 b) Steps to print codes from Huffman Tree:
 
 Traverse the tree formed starting from the root. Maintain an auxiliary array. While moving to the left child, write 0 to the array. While moving to the right child, write 1 to the array. Print the array when a leaf node is encountered.
+
+
+Example:
+a            5
+b           9
+c           12
+d           13
+e           16
+f           45
+
+Output:
+character   code-word
+    f          0
+    c          100
+    d          101
+    a          1100
+    b          1101
+    e          111

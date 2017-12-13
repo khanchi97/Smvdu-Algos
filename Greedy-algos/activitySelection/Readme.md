@@ -6,3 +6,11 @@ The greedy choice is to always pick the next activity whose finish time is least
 2) Select the first activity from the sorted array and print it.
 3) Do following for remaining activities in the sorted array.
 …….a) If the start time of this activity is greater than or equal to the finish time of previously selected activity then select this activity and print it.
+
+
+Example:
+6
+1 3 0 5 8 5
+2 4 6 7 9 9
+Output:
+selected activities are 0 1 3 4
