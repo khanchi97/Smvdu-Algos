@@ -8,49 +8,42 @@
   
   BINARY SEARCH IN JAVA:-
 -----------------------------------------------------------------------------------------------------------------------------
-import java.util.Scanner;
- 
-class BinarySearch 
+import java.util.*;
+class binary_search 
 {
   public static void main(String args[])
   {
-    int c, first, last, middle, n, search, array[];
- 
+    int n,c,mid,beg,end,value,i,position;
     Scanner in = new Scanner(System.in);
     System.out.println("Enter number of elements");
-    n = in.nextInt(); 
-    array = new int[n];
- 
-    System.out.println("Enter " + n + " integers in increasing order");
- 
- 
-    for (c = 0; c < n; c++)
-      array[c] = in.nextInt();            //taking input from user.
- 
+    n = in.nextInt();                       //inputting the length of array
+    int numbers = new int[n];               //declaring array of n numbers
+    System.out.println("Enter "+n+" integers in increasing order");
+    for (i = 0; i < n; i++)
+      numbers[i] = in.nextInt();            //taking input from user of n numbers in increasing order.
     System.out.println("Enter value to find");
-    search = in.nextInt();                //taking input of value to be searched.
- 
-    first  = 0;
-    last   = n - 1;
-    middle = (first + last)/2;
- 
-    while( first <= last )
+    value = in.nextInt();                //taking input of value whose position to be searched.
+    beg  = 0;                             //beg=beginning
+    end   = n - 1;                        //end=ending of array
+    mid = (beg + end)/2;                  /*mid=middle element of array.if end=7 beg+end=7,so mid=7/2=4.5 but since
+                                              mid is int type it will be 4.*/
+    while(beg<=end)
     {
-      if ( array[middle] < search )
-        first = middle + 1;    
-      else if ( array[middle] == search ) 
+      if ( numbers[mid] <value)
+        beg = mid + 1;    
+      else if (numbers[mid]==value) 
       {
-        System.out.println(search + " found at position " + (middle + 1) + ".");
+        System.out.println(value+" found at position " +(mid+1));
         break;
       }
       else
-         last = middle - 1;
-      middle = (first + last)/2;
-    }
-    if ( first > last )
-      System.out.println(search + " is not present in the list.\n");
-  }
-  }
+         end=mid-1;
+      mid= (beg+end)/2;
+     }//while loop closes
+    if (beg>end)                            //default case if not found
+      System.out.println("invalid term");
+  }//method closes
+  }//class closes
   ---------------------------------------------------------------------------------------------------------------------------
   Exemplary Output:
   
