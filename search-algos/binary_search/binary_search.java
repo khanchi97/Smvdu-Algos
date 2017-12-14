@@ -17,7 +17,7 @@ class binary_search
     Scanner in = new Scanner(System.in);
     System.out.println("Enter number of elements");
     n = in.nextInt();                       //inputting the length of array
-    int numbers = new int[n];               //declaring array of n numbers
+    int numbers[] = new int[n];               //declaring array of n numbers
     System.out.println("Enter "+n+" integers in increasing order");
     for (i = 0; i < n; i++)
       numbers[i] = in.nextInt();            //taking input from user of n numbers in increasing order.
