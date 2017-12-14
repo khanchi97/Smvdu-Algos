@@ -20,7 +20,6 @@ int n;
             if(i==c[j])printf("%d ",c[j]);
         }
     }
-    //mohit
     return 0;
 }
 
