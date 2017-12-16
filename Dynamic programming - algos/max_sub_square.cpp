@@ -1,7 +1,7 @@
 ////////////////////////////Problem statement/////////////////////////////
 
+/*
 /////
-
 Given a binary matrix, find out the maximum size square sub-matrix with all 1s.
 
 Input:
@@ -19,8 +19,8 @@ Constraints:
 1 ≤ T ≤ 100
 1 ≤ n,m ≤ 50
 0 ≤ C[n][m] ≤ 1
-
 //////
+*/
 
 
 ////////////////////////////Solution/////////////////////////////
@@ -29,7 +29,7 @@ Constraints:
 using namespace std;
 
 
-int square_max(vector<vector<int> > matrix)
+int square_max(vector<vector<int> > &matrix)
 {
     int max_val=0;
     vector<vector<int> > dp(matrix.size(),vector<int>(matrix[0].size()));
@@ -61,14 +61,14 @@ int main()
 {
 	int T;
 	cin>>T;
-	int m,n;
+	int n,m;
 	while(T--)
 	{
-	    cin>>m>>n;
-	    vector<vector<int> > matrix(m,vector<int>(n,0));
-	    for(int i=0;i<m;i++)
+	    cin>>n>>m;
+	    vector<vector<int> > matrix(n,vector<int>(m,0));
+	    for(int i=0;i<n;i++)
 	    {
-	        for(int j=0;j<n;j++)
+	        for(int j=0;j<m;j++)
 	        {
 	            cin>>matrix[i][j];
 	        }

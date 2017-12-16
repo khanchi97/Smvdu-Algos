@@ -1,5 +1,6 @@
 /////////////////////////Problem Statement/////////////////////////
 
+/*
 ///////////////////
 LCS Problem Statement: Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous. For example, “abc”, “abg”, “bdf”, “aeg”, ‘”acefg”, .. etc are subsequences of “abcdefg”. So a string of length n has 2^n different possible subsequences.
 
@@ -24,8 +25,9 @@ For each test case print the length of longest  common subsequence of the two st
 Constraints:
 1<=T<=200
 1<=size(str1),size(str2)<=100
-///////////////////
 
+///////////////////
+*/
 
 
 
@@ -37,9 +39,9 @@ Constraints:
 #include <bits/stdc++.h>
 using namespace std;
 
-int LCS(string A,string B)
+int LCS(string &A,string &B)
 {
-    vector< vector<int>> dp(A.length()+1,vector<int>(B.length()+1));
+    vector< vector<int> > dp(A.length()+1,vector<int>(B.length()+1));
     for(int i=0; i<=A.length();i++)
     {
         for(int j=0;j<=B.length();j++)

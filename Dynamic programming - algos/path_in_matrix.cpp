@@ -1,7 +1,7 @@
 ////////////////////////////Problem statement/////////////////////////////
 
+/*
 /////
-
 Given a N X N  matrix Matrix[N][N] of positive integers.  There are only three possible moves from a cell Matrix[r][c].
 
 1. Matrix[r+1][c]
@@ -25,6 +25,7 @@ Constraints:
 1<=Matrix[i][j]<=1000 (for all 1<=i<=N && 1<=j<=N)
 
 //////
+*/
 
 
 ////////////////////////////Solution/////////////////////////////
@@ -33,14 +34,14 @@ Constraints:
 using namespace std;
 
 
-int max_sum(vector<vector<int>> matrix)
+int max_sum(vector<vector<int> > &matrix)
 {
-	vector<vector<int>> dp(matrix.size(),vector<int>(matrix.size(),0));
+	vector<vector<int> > dp(matrix.size(),vector<int>(matrix.size(),0));
 	int n=matrix.size();
 	int max_val=INT_MIN;
 	for(int i=0;i<n;i++)
 	{
-            for(int j=0;j<n;j++)
+                        for(int j=0;j<n;j++)
 	    	{
 	                  if(i==0)
 	                  {
@@ -48,7 +49,11 @@ int max_sum(vector<vector<int>> matrix)
 	                  }
 	                  else if(j==0)
 	                  {
-	                  	dp[i][j]=max(dp[i-1][j],dp[i-1][j+1]) + matrix[i][j] ;
+	                  	dp[i][j]= max(dp[i-1][j],dp[i-1][j+1]) + matrix[i][j] ;
+	                  }
+	                  else if(j==n-1)
+	                  {
+	                  	dp[i][j]= max(dp[i-1][j-1], dp[i-1][j])+matrix[i][j] ;
 	                  }
 	                  else if (i!=0 && j!=0)
 	                  {

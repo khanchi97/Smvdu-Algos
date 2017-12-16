@@ -1,8 +1,7 @@
 /////////////////////////Problem Statement/////////////////////////
 
+/*
 ///////////////////
-
-
 Write an efficient C++ program to find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum.
 
 Given an array containing both negative and positive integers. Find the contiguous sub-array with maximum sum.
@@ -17,8 +16,8 @@ Constraints:
 1 ≤ T ≤ 200
 1 ≤ N ≤ 1000
 -100 ≤ A[i] <= 100
-
 ///////////////////
+*/
 
 
 ////////////////////////////Solution///////////////////////////////////
@@ -27,7 +26,7 @@ Constraints:
 using namespace std;
 
 
-int kadane(vector<int> vec)
+int kadane(vector<int> &vec)
 {
     int current_max=vec[0] ;
     int global_max=vec[0] ;

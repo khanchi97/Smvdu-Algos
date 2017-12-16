@@ -2,7 +2,8 @@
 
 ////////////////////////////Problem statement/////////////////////////////
 
-/////
+/*
+
 Following are common definition of Binomial Coefficients.
 1) A binomial coefficient C(n, k) can be defined as the coefficient of X^k in the expansion of (1 + X)^n.
 
@@ -26,7 +27,7 @@ Constraints:
 1<=n<=1000
 1<=r<=800
 
-//////
+*/
 
 
 ////////////////////////////Solution/////////////////////////////
@@ -39,7 +40,7 @@ using namespace std;
 int nCr(int n, int r)
 {
     int M=1000000007;
-    vector< vector<int>> dp (n+1,vector<int>(r+1)) ;
+    vector<vector<int> > dp (n+1,vector<int>(r+1)) ;
     
     dp[0][0]=1 ;
     
@@ -65,7 +66,6 @@ int nCr(int n, int r)
             else
             {
                 dp[i][j]= ( dp[i-1][j-1]+dp[i-1][j] )%M ;
-            
             }
         }
     }
