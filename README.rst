@@ -34,7 +34,8 @@ And one more thing that you can do is invite your friends so that they can get b
 
 **Note:**
 
-* Please make sure that you are making a PR with referencing a issue as well.If you want to add something new then please create an issue or if you need any help then feel free to ping us in gitter channel.And if you want to give some suggestion related to this project,we can discuss in our channel.
+* Please make sure that you are making a PR with referencing a issue as well.If you want to add something new then please create 
+an issue or if you need any help then feel free to ping us in gitter channel.And if you want to give some suggestion related to this project,we can discuss in our channel.
 
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
