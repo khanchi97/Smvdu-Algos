@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class binarysearch {
 
@@ -17,6 +18,8 @@ public class binarysearch {
 		int element= s.nextInt();
 		
 		//for binary search the array must be sorted ..
+		// using the inbuilt java library for sorting the array fast.
+		Arrays.sort(input);         
 		
 		//finding result using iterative method
 		int resIterative=binarySearchIterative(input,element);
@@ -25,7 +28,10 @@ public class binarysearch {
 		//finding result using recursive method
 		int resRecursive=binarySearchRecursive(input,element,0,size); 
 		System.out.println("Index from recursive binarySearch : "+resRecursive);
-		
+		System.out.println("in Sorted Input array-->>");
+		for(int i=0;i<size;i++)
+		{   System.out.print(input[i]+ " "); 
+		}
 		s.close();
 	}
 
@@ -33,7 +39,6 @@ public class binarysearch {
 		int index;
 		int start=0,end=arr.length-1;
 		int mid;
-		
 		
 		while(start<=end)			// if start>end then it means that our search is finished and element not found
 		{   mid=(start+end)/2;
