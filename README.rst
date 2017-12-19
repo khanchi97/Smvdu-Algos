@@ -20,6 +20,11 @@ And please follow https://wiki.gnome.org/Git/CommitMessages to know how to write
 
 If you are a newcomer to github then first take a look at `wiki <https://en.wikipedia.org/wiki/GitHub>`_ page of github and then please go through `this <https://try.github.io/levels/1/challenges/1>`_ tutorial to learn some git commands. 
 
+Some more resources to learn about GIT and GITHUB:
+1. Code School tutorial- https://www.codeschool.com/courses/try-git
+2. Codecademy Tutorial- https://www.codecademy.com/learn/learn-git
+3. Best resource to learn about Linux and its Terminal- https://linuxjourney.com/
+
 Now you have a great opportunity in helping us to improve `Smvdu-Algos <https://github.com/khanchi97/Smvdu-Algos>`_.And learning new things along with practising algorithms.
 And you can 
 
