@@ -11,3 +11,5 @@ Space Complexity : O(n)<br>
 Time complexity of Merge Sort is O(n Log n) in all 3 cases (worst, average and best) as merge sort always divides the array in two halves and take linear time to merge two halves.<br>
 It requires equal amount of additional space as the unsorted list. Hence its not at all recommended for searching large unsorted lists.<br>
 It is the best Sorting technique used for sorting Linked Lists.<br>
+
+[visualize merge sort algorithm](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/)
