@@ -17,6 +17,13 @@ And please follow https://wiki.gnome.org/Git/CommitMessages to know how to write
 |gitter channel|
 
 =====
+=====
+Here are some images showing the complexities of various search and sort algorithms:
+.. image::https://he-s3.s3.amazonaws.com/media/uploads/c950295.png
+   :image::https://he-s3.s3.amazonaws.com/media/uploads/317c55e.png
+   :align:center
+=====
+
 
 If you are a newcomer to github then first take a look at `wiki <https://en.wikipedia.org/wiki/GitHub>`_ page of github and then please go through `this <https://try.github.io/levels/1/challenges/1>`_ tutorial to learn some git commands. 
 
@@ -35,6 +42,8 @@ And you can
 * Create a PR.
 
 Now the only thing that you have to do is fork Smvdu-Algos repository,make some changes and use **git add/commit/push** to let us know what you have changed and what you want to be merge in **Smvdu-Algos**.
+
+
 And one more thing that you can do is invite your friends so that they can get benefit from this and learn new things. 
 
 **Note:**
@@ -45,5 +54,4 @@ an issue or if you need any help then feel free to ping us in gitter channel.And
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
  :align: middle
-
 
