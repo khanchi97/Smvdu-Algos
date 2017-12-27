@@ -58,9 +58,5 @@ an issue or if you need any help then feel free to ping us in gitter channel.And
    :align: center
    :target: https://www.hackerearth.com/practice/notes/sorting-and-searching-algorithms-time-complexities-cheat-sheet/
 =====
-=====
-.. image:: https://he-s3.s3.amazonaws.com/media/uploads/317c55e.png
-   :align: center
-   :target: https://www.hackerearth.com/practice/notes/sorting-and-searching-algorithms-time-complexities-cheat-sheet/
-=====
+
 
