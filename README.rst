@@ -51,7 +51,7 @@ an issue or if you need any help then feel free to ping us in gitter channel.And
  *To get a better understanding of the best,average and worst case complexities of various search and sort algos,take a look at              the following image And to understand what is BIG O Complexity, read the following blog:
  The Beginner's guide to Big O Complexity- https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
  
-**Happy Coding.****GodSpeed..!!**
+**Happy Coding!**
  
 =====
 
