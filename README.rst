@@ -45,5 +45,21 @@ an issue or if you need any help then feel free to ping us in gitter channel.And
 .. |gitter channel| image:: https://badges.gitter.im/Join Chat.svg
  :target: https://gitter.im/Smvdu-Algos/Lobby
  :align: middle
+ 
+ **Complexities of various Search & Sort Algos:**
+ 
+ *To get a better understanding of the best,average and worst case complexities of various search and sort algos,take a look at              the following image And to understand what is BIG O Complexity, read the following blog:
+ The Beginner's guide to Big O Complexity- https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
+ 
+**Happy Coding.****GodSpeed..!!**
+ 
+=====
+
+.. image:: https://he-s3.s3.amazonaws.com/media/uploads/c950295.png
+   :align: center
+   :target: https://www.hackerearth.com/practice/notes/sorting-and-searching-algorithms-time-complexities-cheat-sheet/
+   
+=====
+
 
 
