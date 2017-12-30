@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class binarysearch {
 
@@ -9,17 +8,15 @@ public class binarysearch {
 		int size= s.nextInt();
 		int input[]=new int[size];
 		// taking inputs for array
+		// for binary search the array must be sorted initially..
+		System.out.println("Enter the array in increasing order only);
 		for(int i=0;i<size;i++)
 		{   System.out.print("enter element "+ (i+1) +" : "); 
 			input[i]= s.nextInt();
 		}  
 
 		System.out.print("Enter element to be searched : ");
-		int element= s.nextInt();
-		
-		//for binary search the array must be sorted ..
-		// using the inbuilt java library for sorting the array fast.
-		Arrays.sort(input);         
+		int element= s.nextInt();       
 		
 		//finding result using iterative method
 		int resIterative=binarySearchIterative(input,element);
