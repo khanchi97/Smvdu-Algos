@@ -1,0 +1,60 @@
+public class GcdEuclid(){
+//GCD of two numbers a,b is the largest number d that divides both of them.
+// A simple way to find GCD is to factorize both numbers and multiply common factors.
+// Doing the simple way takes a lot more time generally O(min(a,b)) which is not accepted when input numbers are
+// too large .
+// whereas worst case time complexity of euclid algo is O(log(min(a,b)))
+// Euclid algo is based on two facts:
+// If we subtract smaller number from larger (we reduce larger number), GCD doesn’t change....
+// .....So if we keep subtracting repeatedly the larger of two, we end up with GCD.
+// Now instead of subtraction, if we divide smaller number, the algorithm stops when we find remainder 0.
+	
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter first no: ");
+		int a = s.nextInt();
+		System.out.println("Enter second no: ");
+		int b = s.nextInt();
+		
+		// noting starting time before calling function.
+		Long start = System.currentTimeMillis();
+		System.out.println( "GCD using simple method: " + gcd(a,b));
+		// noting ending time of finding GCD with simple method
+		Long end = System.currentTimeMillis();
+		// time taken by the function call to return GCD
+		System.out.println("Time taken by using simple method: "+ (end-start));
+		
+		// finding GCD using Euclid way
+		System.out.println("GCD using euclid algorithm: "+ gcdEuclid(a, b));
+		// time taken will be current time - last time..
+		System.out.println("Time taken by using simple method: "+(System.currentTimeMillis()-end));
+		s.close();
+	}
+	
+	public static int gcdEuclid(int a , int b){
+		if(a<b)
+			return gcdEuclid(b, a);
+		if(b==0)
+			return a;
+		return gcdEuclid(b, a%b);
+	}
+
+	// this is the naive way of finding gcd that takes
+	public static int gcd(int a,int b){
+		if(a>b){
+			int temp = a;
+			a = b;
+			b = temp; 
+		}
+		int gcdr=1;
+	    for(int i=2;i<=a;i++){
+	        while(a%i==0 && b%i==0)
+	         {
+	        	 gcdr*=i;
+	        	  a/=i;
+	          }
+	    }
+	    return gcdr;
+	}
+}	
