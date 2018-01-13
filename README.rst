@@ -53,6 +53,7 @@ And one more thing that you can do is invite your friends so that they can get b
 
 * To get a better understanding of the best,average and worst case complexities of various search and sort algos,take a look at
   the following image and to understand what is BIG O Complexity, read the following blog:
+  
   `The Beginner's guide to Big O Complexity <https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation>`_
  
 **Happy Coding!**
