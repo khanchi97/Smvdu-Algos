@@ -39,9 +39,9 @@ int main()
      cin>>a[i];    // initialise the array
     }
      pigeonhole(a,n);   //call the function
+    cout<<"the sorted array is"<<endl;
      for(i=0;i<n;i++)
-     {
-      cout<<"the sorted array is"<<endl;   
+     {   
       cout<<a[i]<<" ";
      }
     return 0;
